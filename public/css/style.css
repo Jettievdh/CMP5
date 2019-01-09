@@ -1,0 +1,262 @@
+/*
+#060910 blauw
+#53FAC7 groen/blauw
+#0C162B donkerblauw
+background-color: #142546;
+ */
+
+body{
+  height: 100%;
+  font-family: 'Catamaran', sans-serif;
+
+}
+
+#bg{
+  background-image: url('/imgs/BG1.jpg');
+  height: 100%;
+  width: 100%;
+  padding-top: 60px;
+}
+
+#bg_Kleur{
+  background-color: #142546;
+  background-image: linear-gradient(to bottom right, #060910, #1F3C74);
+  width: 100%;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+/* Achtergrond van filter - langere versie */
+#bg_Kleur2 {
+  background-color: #142546;
+  background-image: linear-gradient(to bottom right, #060910, #1F3C74);
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  min-height: 100%;
+}
+#bg_Kleur2 .header {
+  height: 100px;
+}
+
+#onderaan{
+  margin-top: 100%;
+  color: white;
+  text-align: center;
+}
+
+#homeA{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.header {
+  color: #0C162B;
+  background-image: linear-gradient(to bottom right, #1F3C74, #060910);
+  margin-top: -80px;
+  height: 100px;
+}
+
+.terug{
+  color:white;
+  font-size: 60px;
+  position: relative;
+  top: -80px;
+  margin-left: 10px;
+}
+
+.header h1 {
+  padding-top: 25px;
+  font-size: 2em;
+  color: white;
+}
+
+.knop-primair {
+  color: #060910;
+  background-color: #53FAC7;
+  font-size: 1.2em;
+  border-radius: 8px;
+  border: none;
+  padding: 5px 25px;
+}
+
+.knop-menu {
+  color: white;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  padding: 5px 25px;
+}
+
+.imgMenu {
+  height: 80px;
+}
+
+/* TYPOGRAFIE || TEKST */
+h1 {
+  font-family: 'Catamaran', sans-serif;
+  font-style: bold;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+    font-family: 'Catamaran', sans-serif;
+  font-style: bold;
+  font-size: 2em;
+  color: white;
+  margin-top: -30px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+    font-family: 'Catamaran', sans-serif;
+  list-style: none;
+}
+
+/* GRID MENU */
+.grid-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* padding: 10px; */
+}
+.grid-item {
+  /* border: 1px solid red; */
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* FILTER */
+.grid-deel {
+/*  width: 65%;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #53FAC7;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2em; */
+  width: 93%;
+  color: white;
+  margin-left: 7%;
+  line-height: 4em;
+  border-bottom: 0.3px solid #636f86;
+}
+
+.filter-container {
+  margin-top: 10px;
+}
+
+.filter-knoppen button {
+  font-size: 0.8em;
+  border-radius: 8px;
+  padding: 10px 25px;
+  background:rgba(255,255,255, 0.3);
+  margin-bottom: 10px;
+  border: none;
+  color: white;
+}
+
+.filter-knoppen{
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+/* Start */
+
+.stopwatch {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.cssstopwatch h2 {
+  margin-top: 40px;
+  color: white;
+  padding-top: 20px;
+  font-size: 2.1rem;
+}
+
+
+.cssstopwatch{
+  margin-top: 50px;
+  margin-bottom: -30px;
+}
+
+.cssstopwatch p {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  margin-top: -10px;
+}
+
+.controls .button {
+  /* text-decoration: none;
+  color: #53FAC7;
+  margin-left: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #53FAC7;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold; */
+  font-size: 1.2em;
+  border-radius: 8px;
+  padding: 10px 25px;
+  background:rgba(255,255,255, 0.3);
+  margin-bottom: 10px;
+  border: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.controls .button:first-child{
+  margin-left: 34px;
+}
+
+.controls {
+  margin-top: 80px;
+}
+
+/* lijst */
+
+.lijstLoop {
+  list-style: none;
+  /*text-align: center;*/
+  color: white;
+  margin-left: 30px;
+  margin-right: 10px;
+  line-height: 3em;
+  border-bottom: 0.3px solid #636f86;
+}
+
+#titel {
+  font-size: 1.8em;
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 30px;
+  font-weight: 100;
+}
+
+.header3 {
+  color: #0C162B;
+  background-image: linear-gradient(to bottom right, #1F3C74, #060910);
+  margin-top: -92px;
+  height: 3.5%;
+}
+
+.header3 h1 {
+  padding-top: 30px;
+  font-size: 2em;
+  color: white;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <title>Loopparcours in Antwerpen</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+        <link rel="stylesheet" href="css/map.css">
+    </head>
+    <body>
+
+       <div id="map"></div>
+        <% for(var i=0; i < Loopparcours.features.length; i++) { %>
+
+        <% } %>
+
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+        integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+        <script src="js/map.js"></script>
+
+        <script>
+            <% for(var i=0; i < Loopparcours.features.length; i++) { %>
+            L.marker([<%- Loopparcours.features[i].geometry.paths[0][0][1] %>, <%- Loopparcours.features[i].geometry.paths[0][0][0] %>]).addTo(map)
+                .bindPopup("<%- Loopparcours.features[i].attributes.Naam%>")
+            <% } %>
+        </script>
+
+    </body>
+</html>
